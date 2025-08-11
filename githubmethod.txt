@@ -1,0 +1,9 @@
+cd /path/to/project            # 깃허브에서 보이게 될 최상위 폴더로 이동
+git init                       # 로컬에 Git 저장소 초기화
+git branch -M main             # 기본 브랜치를 main으로 고정
+git remote add origin https://github.com/Pogjunan/GPTCLIPQLoRA
+                               # 원격(깃허브) 주소를 'origin' 별명으로 등록
+git status                     # 추적 대상 확인
+git add .                      # ( .gitignore 제외 ) 모든 파일 스테이징
+git commit -m "init: scaffold" # 첫 커밋
+git push -u origin main        # 원격으로 업로드(+ 'upstream' 추적 설정)
