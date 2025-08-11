@@ -1,0 +1,36 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Envs
+.venv/
+venv/
+.env
+*.env
+
+# Model artifacts
+runs/
+checkpoints/
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+wandb/
+
+# Tokenizers
+**/tokenizer/*.model
+**/tokenizer/*.vocab
+
+# Data: 기본적으로 data 폴더는 무시하되, 예제 tiny.txt는 포함
+**/data/**
+!gpt2_mini/data/tiny.txt
+
+# OS/IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
